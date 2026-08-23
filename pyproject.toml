@@ -1,0 +1,26 @@
+[project]
+name = "code"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "ombade", email = "ombade364@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "google-genai>=2.19.0",
+    "groq>=1.6.0",
+    "ipykernel>=7.3.0",
+    "openai>=3.3.1",
+    "pydantic>=2.13.4",
+    "python-dotenv>=1.2.3",
+    "streamlit>=1.62.0",
+]
+
+[project.scripts]
+code = "code:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
