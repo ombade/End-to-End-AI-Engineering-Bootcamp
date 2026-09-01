@@ -1,5 +1,5 @@
 [project]
-name = "code"
+name = "apps"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -9,25 +9,15 @@ authors = [
 requires-python = ">=3.12"
 dependencies = [
     "dotenv>=0.9.9",
+    "fastapi>=0.141.1",
+    "google>=3.0.0",
     "google-genai>=2.19.0",
     "groq>=1.6.0",
-    "ipykernel>=7.3.0",
     "openai>=3.3.1",
-    "pandas>=3.0.5",
-    "pydantic>=2.13.4",
-    "python-dotenv>=1.2.3",
-    "qdrant-client>=1.19.0",
-    "streamlit>=1.62.0",
+    "pydantic-settings>=2.15.0",
+    "unicorn>=2.1.4",
 ]
-
-[project.scripts]
-code = "code:main"
 
 [build-system]
 requires = ["uv_build>=0.12.5,<0.13.0"]
 build-backend = "uv_build"
-
-[tool.uv.workspace]
-members = [
-    "apps",
-]
